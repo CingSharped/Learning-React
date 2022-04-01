@@ -3,7 +3,7 @@ import React from 'react'
 class Exercise extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {exerciseName: "Exercise Name", exerciseDescription: "This is filler text"};
+      this.state = {exerciseName: "Exercise Name", exerciseDescription: "This is how to perform the exercise"};
 
     }
 
