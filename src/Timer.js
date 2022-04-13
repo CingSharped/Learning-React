@@ -3,8 +3,9 @@ import React from 'react'
 class Timer extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {time: 0, timeLimit: 10};
+      this.state = {time: 0, timeLimit: 10, timerOn: false};
       this.setTimeLimit.bind(this);
+      this.toggleTimer.bind(this);
     }
   
     componentDidMount() {
@@ -29,12 +30,20 @@ class Timer extends React.Component {
             timeLimit: limit
         })
     }
+
+    toggleTimer() {
+      this.setState({
+        timerOn: !this.state.timerOn,
+        time: 0
+      })
+    }
   
     render() {
       return (
         <div>
-          <h5>Your timer is {this.state.timeLimit} seconds</h5>
-          <h2>{this.state.time}</h2>
+          <h5>Your timer is {this.state.timeLimit} seconds {this.state.timerOn ?  "On" : "Off"}</h5>
+          <h2>{this.state.timerOn ? this.state.time : "0"}</h2>
+          <button type='button' onClick={() => this.toggleTimer()}>Start Timer</button>
           <button type='button' onClick={() => this.setTimeLimit(40)}>40</button>
           <button type='button' onClick={() => this.setTimeLimit(50)}>50</button>
           <button type='button' onClick={() => this.setTimeLimit(60)}>60</button>
