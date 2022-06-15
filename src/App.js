@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Timer from './Timer';
 import Exercise from './Exercise';
+import React from 'react'
 
 function App() {
   return (
