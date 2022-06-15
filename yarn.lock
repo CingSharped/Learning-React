@@ -3296,9 +3296,9 @@
   "version" "0.1.1"
 
 "core-js-compat@^3.21.0", "core-js-compat@^3.22.1":
-  "integrity" "sha512-i4FgbtahOArZBEteiL+czI5N/bp17w16bXmLagGThdA2zuX1a5X4HbBmOVD7ERRtk3wMtPOFEmlXpVV4lsvwNw=="
-  "resolved" "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.23.0.tgz"
-  "version" "3.23.0"
+  "integrity" "sha512-KeYrEc8t6FJsKYB2qnDwRHWaC0cJNaqlHfCpMe5q3j/W1nje3moib/txNklddLPCtGb+etcBIyJ8zuMa/LN5/A=="
+  "resolved" "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.23.1.tgz"
+  "version" "3.23.1"
   dependencies:
     "browserslist" "^4.20.4"
     "semver" "7.0.0"
