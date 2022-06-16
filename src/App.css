@@ -38,10 +38,12 @@
 }
 
 button {
-  width: 100px;
+  width: 120px;
   height: 20px;
   border-radius: 10px;
   max-width: auto;
+  background-color: white;
+  margin: 10px;
 }
 
 .exerciseDisplay {
@@ -57,6 +59,7 @@ button {
   margin: 10px;
   background-color: darkgray;
   color: black;
+  width: 350px;
 }
 
 .timerDisplay {
@@ -66,4 +69,5 @@ button {
   margin: 10px;
   background-color: darkgray;
   color: black;
+  width: 350px;
 }

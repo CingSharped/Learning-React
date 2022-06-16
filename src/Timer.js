@@ -43,10 +43,10 @@ class Timer extends React.Component {
         <div className='timerDisplay'>
           <h5>Your timer is {this.state.timeLimit} seconds {this.state.timerOn ?  "On" : "Off"}</h5>
           <h2>{this.state.timerOn ? this.state.time : "0"}</h2>
-          <button type='button' onClick={() => this.toggleTimer()}>{this.state.timerOn ? "Stop Timer" : "Start Timer"}</button>
-          <button type='button' onClick={() => this.setTimeLimit(40)}>40</button>
-          <button type='button' onClick={() => this.setTimeLimit(50)}>50</button>
-          <button type='button' onClick={() => this.setTimeLimit(60)}>60</button>
+          <button className='button' type='button' onClick={() => this.toggleTimer()}>{this.state.timerOn ? "Stop Timer" : "Start Timer"}</button>
+          <button className='button' type='button' onClick={() => this.setTimeLimit(40)}>40</button>
+          <button className='button' type='button' onClick={() => this.setTimeLimit(50)}>50</button>
+          <button className='button' type='button' onClick={() => this.setTimeLimit(60)}>60</button>
         </div>
       );
     }
